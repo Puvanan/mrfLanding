@@ -1,0 +1,153 @@
+body {
+    font-family: 'Montserrat' !important;
+}
+
+.mainVontainer{
+    display:flex;
+}
+.container_cardHome {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 350px;
+    right: 150px;
+    /*left: calc(55% - 500px);*/
+    display: flex;
+    flex-grow: 1;
+}
+.container_left {
+    position: absolute;
+    height: 428px;
+    width: 800px;
+    top: 350px;
+    left: 50px;
+    border-right-style: solid;
+    border-color: #d3d4d6;
+    /* left: calc(55% - 500px); */
+    /* display: flex;*/
+}
+
+
+#container.vertical-header {
+    padding: 10px !important
+}
+
+.border-left {
+    border-left-style: solid;
+    height: 77px;
+    width: 20px;
+    border-color: #81cfe0;
+    float: left;
+}
+.cardHome {
+    cursor: pointer;
+    display: flex;
+    height: 280px;
+    width: 220px;
+    background-color: #f4f2f2;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #bcbcbc;
+    /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 60px;
+    margin: 90px 0px 0 0;
+}
+
+    .cardHome:not(:first-child) {
+        margin-left: 1px;
+    }
+
+    .cardHome:hover {
+        transform: translateY(-5px);
+        transition: 0.4s ease-out;
+    }
+
+        .cardHome:hover ~ .cardHome {
+            position: relative;
+            left: 50px;
+            transition: 0.4s ease-out;
+        }
+
+.h3, h3 {
+    font-size: 16px;
+}
+
+.homeContent {
+    margin-left: 0 !important;
+}
+
+.home {
+    border-radius: 4rem;
+    border: solid;
+    border-width: 2px;
+    border-color: #fff;
+}
+
+    .home h1 {
+        color: #fff !important;
+        font-size: 80px !important;
+        font-weight: 500 !important;
+        text-transform: capitalize;
+    }
+
+.title {
+    color: #535758;
+    font-weight: 200;
+    position: absolute;
+    left: 15px;
+    text-align: center;
+    top: 15px;
+}
+
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+}
+
+.emptybar {
+    background-color: #d3d4d6;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: #81cfe0;
+    transition: 0.6s ease-out;
+}
+
+.cardHome:hover .filledbar {
+    width: 150px;
+    transition: 0.4s ease-out;
+}
+
+.circle {
+    position: absolute;
+    top: 150px;
+    left: calc(60% - 50px);
+}
+
+.stroke {
+    stroke: #dedfe0;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 50;
+    transition: 0.6s ease-out;
+}
+
+svg {
+    fill: #17141d;
+    stroke-width: 1px;
+}
+
+.cardHome:hover .stroke {
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+}
